@@ -10,13 +10,23 @@ and open the template in the editor.
         <title>Portal Ladies</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <style type="text/css">
-	<!--
+            
 		body {
 			padding:0px;
 			margin:0px;
 		}
- 
-		#menu ul {
+                
+                .container{
+                    margin:0 auto;
+                    width:1000px;
+                    
+                }
+                .menu{
+                    width:1000px;
+                    float:left;
+                    margin-bottom: 10px;
+                }
+		.menu ul {
 			padding:0px;
 			margin:0px;
 			float: left;
@@ -26,9 +36,9 @@ and open the template in the editor.
 			font:80% Tahoma;
 		}
  
-		#menu ul li { display: inline; }
+		.menu ul li { display: inline; }
  
-		#menu ul li a {
+		.menu ul li a {
 			background-color:#EDEDED;
 			color: #333;
 			text-decoration: none;
@@ -37,26 +47,44 @@ and open the template in the editor.
 			float:left;
 		}
  
-		#menu ul li a:hover {
+		.menu ul li a:hover {
 			background-color:#D6D6D6;
 			color: #6D6D6D;
 			border-bottom:3px solid #EA0000;
 		}
-	-->
+                .corpo_imagens img{
+                    margin-bottom: 50px;
+                    margin-top: 70px;
+                    margin-left: 60px;
+                }
+                .logotipo{
+                    margin:5px;
+                    float:left;
+                    width:250px;
+                    height:150px;
+                    border:1px dotted #333;
+                }
 	</style>
     </head>
-    <body>
-        <div id="menu" style="margin-right: 30%;margin-left: 30%">
-		<ul>
-                    <li><a href="Index.html">Inicio</a></li>
-                        <li><a href="apresentacaoEquipe.html" > Equipe</a></li>
-                        <li><a href="apresentacaoServicosEmp.html">Serviços</a></li>
-                        <li><a href="apresentacaoParceiros.html">Parceiros</a></li>
-                        <li><a href="apresentacaoTecnologia.html">Tecnologias</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-			
-		</ul>
-	</div>
+    <body background='imagens/logotipo/fundo.png'>
         
+        <div class='container'  >
+            <div class="menu">
+                    <ul>
+                        <li><a href="Index.html">Inicio</a></li>
+                            <li><a href="apresentacaoEquipe.html" > Equipe</a></li>
+                            <li><a href="apresentacaoServicosEmp.html">Serviços</a></li>
+                            <li><a href="apresentacaoParceiros.html">Parceiros</a></li>
+                            <li><a href="apresentacaoTecnologia.html">Tecnologias</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+
+                    </ul>
+            </div>
+            <div class='corpo_imagens'>
+                <a href=""> <img class='logotipo' src="imagens/logotipo/logo_xablau.png" title="Xablau" alt="Xablau"> </a>
+                <a href=""> <img class='logotipo' src="imagens/logotipo/adidas.jpg" title="Error 404" alt="Error 404"> </a>
+                <a href=""> <img class='logotipo' src="imagens/logotipo/adidas.jpg" title="Alcaida" alt="Alcaida"> </a>
+            </div>
+        </div>
     </body>
 </html>
